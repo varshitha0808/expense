@@ -15,7 +15,6 @@ class SplashPage extends StatelessWidget{
       body:Center(
         child:Column(
           mainAxisSize: MainAxisSize.min,
-          //mainAxisAlignment: MainAxisAlignment.center,
           children: [
             FlutterLogo(
               size:50,

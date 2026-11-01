@@ -42,21 +42,42 @@ Widget build(BuildContext context) {
                           child: Column(
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children:[
-                              Text('Total Expense\n',style:TextStyle(fontSize:10,color:Colors.white),),
-                              Column(
-                                crossAxisAlignment: CrossAxisAlignment.end,
+                              Row(
+                                mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                 children: [
-                                  Image.asset("assets/images/dots.png",width:20,height:20,),
+                                  Text('Total Expense\n',style:TextStyle(fontSize:12,color:Colors.white),),
+                                  Container(
+                                    padding: const EdgeInsets.all(3),
+                                    decoration: const BoxDecoration(
+                                      color: Color(0xFF8792DF),
+                                      shape: BoxShape.circle,
+                                    ),
+
+                                    child: const Icon(
+                                      Icons.more_horiz,
+                                      color: Colors.white,
+                                      size: 13,
+                                    ),
+                        ),
+                              ],),
+                              Column(
+                                children: [
+                                  Text.rich( TextSpan(
+                                    text:"\$ 3,734"  ,style:TextStyle(fontSize:25,color:Colors.white, fontWeight: FontWeight.w600,),
+                                    children:[TextSpan(text:"/\$ 4000 per month",style:TextStyle(fontSize: 10,color:Colors.grey,),),],),
+                                                            ),
                                 ],
                               ),
-                              Text.rich( TextSpan(
-                                text:"\$ 3,734",style:TextStyle(fontSize:25,color:Colors.white, fontWeight: FontWeight.w600,),
-                                children:[TextSpan(text:"/\$ 4000 per month",style:TextStyle(fontSize: 10,color:Colors.grey,),),],),
-                          ),
-                        ],
-                      ),),),
-
-                    ),], ),
+                          SizedBox(height:11),
+                          Container(
+                            width: 290,
+                            height: 4,
+                            decoration: BoxDecoration(
+                                color: Color(0xffcfc78a),
+                                borderRadius: BorderRadius.circular(2.0)),),
+                            ],),
+                        ),
+                      ),),],),
 SizedBox(height:11),
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,

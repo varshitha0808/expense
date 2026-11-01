@@ -6,7 +6,7 @@ const FirstPage({super.key});
 Widget build(BuildContext context) {
   return Scaffold(
     body: Padding(
-      padding: const EdgeInsets.all(20.0),
+      padding: const EdgeInsets.symmetric(vertical:25.0,horizontal:20),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
@@ -46,7 +46,7 @@ Widget build(BuildContext context) {
                 decoration: BoxDecoration(
                   color:Color(0xffEFF1FE),
                   borderRadius: BorderRadius.circular(3),
-                  border: Border.all(color:Colors.grey,width:1,),
+                  ///border: Border.all(color:Colors.grey,width:1,),
                 ),
                 child:Row(
                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
@@ -76,7 +76,7 @@ Widget build(BuildContext context) {
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children:[
-                      Text('Expense total\n',style:TextStyle(fontSize:10,color:Colors.white),
+                      Text('Expense total\n',style:TextStyle(fontSize:12,color:Colors.white),
                       ),
                       Text.rich( TextSpan(
                         text:"\$ 3,734 \n",style:TextStyle(fontSize:25,color:Colors.white, fontWeight: FontWeight.bold,),
@@ -92,9 +92,9 @@ Widget build(BuildContext context) {
               ),
             ),
           ),
-          SizedBox(height: 15),
+          SizedBox(height: 18),
           Text("Expense List", style: TextStyle(
-            fontSize: 17,
+            fontSize: 15,
             fontWeight: FontWeight.bold,
             color: Color(0xFF202544),
           ),
@@ -103,10 +103,10 @@ Widget build(BuildContext context) {
           Card(
             child:Container(
               width:360,
-              height:200,
+              height:150,
               decoration:BoxDecoration(
                 borderRadius: BorderRadius.circular(8),
-                border: Border.all(color:Colors.grey,width:1,),
+                border: Border.all(color:Color(0xffD3D3D3),width:1,),
               ),
               child:Padding(
                 padding: const EdgeInsets.all(11.0),
@@ -116,9 +116,9 @@ Widget build(BuildContext context) {
                     Row(
                       mainAxisAlignment:MainAxisAlignment.spaceBetween,
                       children: [
-                        Text('Tuesday,14',style:TextStyle(fontSize:15,color:Colors.black),
+                        Text('Tuesday,14',style:TextStyle(fontSize:15,color:Colors.black,fontWeight: FontWeight.bold,),
                         ),
-                        Text('-\$1380',style:TextStyle(fontSize:15,color:Colors.black),
+                        Text('-\$1380',style:TextStyle(fontSize:15,color:Colors.black,fontWeight: FontWeight.bold,),
                         ),
                       ],
                     ),
@@ -131,13 +131,13 @@ Widget build(BuildContext context) {
                         Text.rich( TextSpan(
                           text:" Shop\n",style:TextStyle(fontSize:15,color:Colors.black, fontWeight: FontWeight.w600,),
                           children:[
-                            TextSpan(text:"Buy new clothes",style:TextStyle(fontSize: 10,color:Colors.black,)
+                            TextSpan(text:"Buy new clothes",style:TextStyle(fontSize: 10,color:Colors.grey,)
                             ),
                           ],
                         ),
                         ),
                         SizedBox(width:130),
-                        Text("-\$90",style:TextStyle(fontSize: 15,color:Colors.black,)
+                        Text("-\$90",style:TextStyle(fontSize: 15,color:Color(0xffE78ABE),)
                         ),
                       ],
                     ),
@@ -148,13 +148,13 @@ Widget build(BuildContext context) {
                         Text.rich( TextSpan(
                           text:" Electronic\n",style:TextStyle(fontSize:15,color:Colors.black, fontWeight: FontWeight.w600,),
                           children:[
-                            TextSpan(text:"Buy new iphone 14",style:TextStyle(fontSize: 10,color:Colors.black,)
+                            TextSpan(text:"Buy new iphone 14",style:TextStyle(fontSize: 10,color:Colors.grey,)
                             ),
                           ],
                         ),
                         ),
                         SizedBox(width:110),
-                        Text("-\$1290",style:TextStyle(fontSize: 15,color:Colors.black,)
+                        Text("-\$1290",style:TextStyle(fontSize: 15,color:Color(0xffE78ABE),)
                         ),
                       ],
                     )
@@ -170,7 +170,7 @@ Widget build(BuildContext context) {
               height:100,
               decoration:BoxDecoration(
                 borderRadius: BorderRadius.circular(8),
-                border: Border.all(color:Colors.grey,width:1,),
+                border: Border.all(color:Color(0xffD3D3D3),width:1,),
               ),
               child:Padding(
                 padding: const EdgeInsets.all(11.0),
@@ -180,9 +180,9 @@ Widget build(BuildContext context) {
                     Row(
                       mainAxisAlignment:MainAxisAlignment.spaceBetween,
                       children: [
-                        Text('Monday,13',style:TextStyle(fontSize:15,color:Colors.black),
+                        Text('Monday,13',style:TextStyle(fontSize:15,color:Colors.black,fontWeight: FontWeight.bold,),
                         ),
-                        Text('-\$60',style:TextStyle(fontSize:15,color:Colors.black),
+                        Text('-\$60',style:TextStyle(fontSize:15,color:Colors.black,fontWeight: FontWeight.bold,),
                         ),
                       ],
                     ),
@@ -193,21 +193,20 @@ Widget build(BuildContext context) {
                                 0xFFC896A9),child: Icon(Icons.directions_car_filled, color: Color(0xffDDB2B3), size: 20)
                             ),
                             SizedBox(width:5),
-                            Text.rich( TextSpan(
+                            Text.rich(
+                              TextSpan(
                               text:" Transportation\n",style:TextStyle(fontSize:15,color:Colors.black, fontWeight: FontWeight.w600,),
                               children:[
-                                TextSpan(text:"Trip to Malang",style:TextStyle(fontSize: 10,color:Colors.black,)
+                                TextSpan(text:"Trip to Malang",style:TextStyle(fontSize: 10,color:Colors.grey,)
                                 ),
                               ],
                             ),
                             ),
                         SizedBox(width:100),
-                        Text("-\$60",style:TextStyle(fontSize: 15,color:Colors.black,)
+                        Text("-\$60",style:TextStyle(fontSize: 15,color:Color(0xffE78ABE),)
                         ),
                           ],
                     ),
-                    SizedBox(height:11),
-                    Divider(),
                   ],
                 ),
               ),

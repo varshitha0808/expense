@@ -12,9 +12,10 @@ class MyApp extends StatelessWidget {
         title: 'Flutter Demo',
         debugShowCheckedModeBanner: false,
         theme: ThemeData(
+          fontFamily: 'Poppins-Regular.ttf',
           colorScheme: .fromSeed(seedColor: Colors.deepPurple),
         ),
-        //home: HomePage(),
+        //home: StatisticPage(),
         initialRoute: AppRoutes.page_splash,
         routes: AppRoutes.mRoutes
     );
